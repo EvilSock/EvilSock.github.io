@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.carousel-wrapper {
+  height: 90vh;
+}
+
+.carousel,
+.carousel-inner {
+  height: 90vh;
+}
+
+.fit {
+  object-fit: contain;
+}
+
+.bd-example {
+  position: relative;
+}
+.bd-example ::before {
+  box-sizing: border-box;
+}
+.bd-example ::after {
+  box-sizing: border-box;
+}
+
+.btn-c {
+  background: none;
+  border: none;
+  margin-left: -5%;
+  margin-right: -5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+.color {
+  background-color: rgba(235, 235, 235, 0);
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
