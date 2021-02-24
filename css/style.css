@@ -53,6 +53,7 @@ body {
 .card {
   width: 20rem;
   margin-top: 1rem;
+  height: auto;
 }
 
 .card-cont {
@@ -69,6 +70,7 @@ body {
 @media all and (max-width: 1200px) {
   .card {
     width: auto;
+    height: auto;
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -82,6 +84,7 @@ body {
   }
   .card {
     width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
