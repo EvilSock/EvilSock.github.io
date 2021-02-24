@@ -45,3 +45,44 @@ body {
   background-color: rgba(235, 235, 235, 0);
   transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
+.cont {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20rem;
+  margin-top: 1rem;
+}
+
+.card-cont {
+  padding-top: 10vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  list-style: none;
+  margin: 0;
+  /* background: deepskyblue; */
+}
+
+@media all and (max-width: 1200px) {
+  .card {
+    width: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .card-cont {
+    flex-flow: column wrap;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .card {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
