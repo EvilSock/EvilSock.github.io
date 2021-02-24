@@ -96,6 +96,12 @@ body {
   }
 }
 
+@media all and (max-width: 1000px) {
+  .color {
+    background-color: #ebebeb;
+  }
+}
+
 @media all and (max-width: 600px) {
   .card-cont {
     -webkit-box-orient: vertical;

@@ -19,3 +19,16 @@ $(document).on("mousewheel",()=>{
 	}
 });
 
+$(document).on("scroll",()=>{
+  if ($(document).scrollTop() <= 20 && $(window).width() >= 995){
+		console.log("bruh")
+		$(".color").css({
+			"background-color":"rgba(235, 235, 235,0)"
+	});
+	} else {
+		$(".color").css({
+			"background-color":"#ebebeb"
+	});
+	}
+});
+
