@@ -158,6 +158,7 @@ body {
   -webkit-box-shadow: -1px 5px 12px -5px rgba(0, 0, 0, 0.75) inset;
   -moz-box-shadow: -1px 5px 12px -5px rgba(0, 0, 0, 0.75) inset;
   /* color: white; */
+  color: white;
 }
 
 .card-custom {
