@@ -1,0 +1,165 @@
+/*
+* Author: Paul Rossouw	
+*	Name: styles.css
+*	Contact: paulrossouw11@gmail.com
+*	
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.carousel-wrapper {
+  height: 90vh;
+}
+
+.carousel,
+.carousel-inner {
+  height: 90vh;
+}
+
+.fit {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.bd-example {
+  position: relative;
+}
+.bd-example ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bd-example ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn-c {
+  background: none;
+  border: none;
+  margin-left: -5%;
+  margin-right: -5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+.color {
+  /* nav bar color */
+  background-color: rgba(235, 235, 235, 0);
+  -webkit-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -o-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.cont {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20rem;
+  margin-top: 1vh;
+  height: auto;
+}
+
+.card-cont {
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  list-style: none;
+  margin: 0;
+  /* background: deepskyblue; */
+}
+
+@media all and (max-width: 1200px) {
+  .card {
+    width: 80vw;
+    height: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .color {
+    /* nav bar color */
+    background-color: #5b90be;
+  }
+  .card {
+    width: 80vw;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .card-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .card {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* .btn:hover {
+  color: white;
+} */
+.btn-custom {
+  box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
+  background-color: #5edfff;
+  color: white;
+  -webkit-transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+  -o-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.btn-custom:hover {
+  box-shadow: -1px 5px 12px -5px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: -1px 5px 12px -5px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: -1px 5px 12px -5px rgba(0, 0, 0, 0.75) inset;
+  /* color: white; */
+}
+
+.card-custom {
+  background-color: #f9d588;
+}
+
+.grad1 {
+  background: linear-gradient(
+    125deg,
+    #ecfcff 0%,
+    #ecfcff 40%,
+    #b2fcff calc(40% + 1px),
+    #b2fcff 60%,
+    #5edfff calc(60% + 1px),
+    #5edfff 72%,
+    #3e64ff calc(72% + 1px),
+    #3e64ff 100%
+  );
+}
