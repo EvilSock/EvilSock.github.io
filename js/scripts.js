@@ -10,6 +10,8 @@ rgba(249, 213, 136,0)
 rgba(170, 192, 216, 0)
 #5B90BE
 -------------------------
+#007cc7
+=========================
 
 */
 
@@ -26,11 +28,11 @@ $(document).on("mousewheel",()=>{
 		console.log("bruh")
 		$(".color").css({
 			// "background-color":"rgba(235, 235, 235,0)" //navbar color
-			"background-color":"rgba(249, 213, 136,0)"
+			"background-color":"rgba(0, 124, 199, 0)"
 	});
 	} else {
 		$(".color").css({
-			"background-color":"#90c0cc"
+			"background-color":"#007cc7"
 	});
 	}
 });
@@ -40,12 +42,12 @@ $(document).on("scroll",()=>{
 		console.log("bruh")
 		$(".color").css({
 			// "background-color":"rgba(235, 235, 235,0)" // navbar color
-			"background-color":"rgba(249, 213, 136,0)"
+			"background-color":"rgba(0, 124, 199, 0)"
 		});
 	} else {
 		$(".color").css({
 			// "background-color":"#ebebeb"
-			"background-color":"#90c0cc" //navbar color
+			"background-color":"#007cc7" //navbar color
 	});
 	}
 });

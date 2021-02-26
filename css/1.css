@@ -146,7 +146,7 @@ body {
   box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
-  background-color: #3e64ff;
+  background-color: #12232e;
   color: white;
   -webkit-transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   -o-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -162,14 +162,14 @@ body {
 }
 
 .card-custom {
-  background-color: #ecfcff;
+  background-color: #dafdfd;
 }
 
 .grad1 {
   background: linear-gradient(
     125deg,
-    #ecfcff 0%,
-    #ecfcff 40%,
+    #eefbfb 0%,
+    #eefbfb 40%,
     #b2fcff calc(40% + 1px),
     #b2fcff 60%,
     #5edfff calc(60% + 1px),
@@ -177,4 +177,55 @@ body {
     #3e64ff calc(72% + 1px),
     #3e64ff 100%
   );
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+body {
+  background-color: #eefbfb;
+}
+.glass {
+  /* background-color: rgba(0, 124, 199, 1); */
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  display: grid;
+  color: white;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  margin: -20px;
+  background-size: 100%;
+}
+
+.dash {
+  border-right: 1px dashed;
+  /* border-right-color: rgba(18, 35, 46, 0.5); */
+  border-right-color: rgba(89, 89, 89, 0.5);
+}
+
+.about {
+  padding-top: 5vh;
+}
+
+.round-image {
+  border-radius: 50%;
 }
