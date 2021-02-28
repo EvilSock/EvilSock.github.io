@@ -1,0 +1,36 @@
+@media all and (max-width: 1200px) {
+  .card {
+    width: 80vw;
+    height: auto;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .color {
+    /* nav bar color */
+    background-color: #90c0cc;
+  }
+  .card {
+    width: 80vw;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .card-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .card {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
