@@ -67,7 +67,6 @@ body {
 }
 .color {
   /* nav bar color */
-  background-color: rgba(235, 235, 235, 0);
   -webkit-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   -o-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -109,7 +108,7 @@ body {
   box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 9px 12px -2px rgba(0, 0, 0, 0.75);
-  background-color: #12232e;
+
   color: white;
   -webkit-transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
   -o-transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -124,22 +123,7 @@ body {
   color: white;
 }
 
-.card-custom {
-  background-color: #dafdfd;
-}
-
 .grad1 {
-  background: linear-gradient(
-    125deg,
-    #eefbfb 0%,
-    #eefbfb 40%,
-    #b2fcff calc(40% + 1px),
-    #b2fcff 60%,
-    #5edfff calc(60% + 1px),
-    #5edfff 72%,
-    #3e64ff calc(72% + 1px),
-    #3e64ff 100%
-  );
   padding-right: 5%;
   padding-left: 5%;
   padding-top: 10vh;
@@ -191,4 +175,13 @@ body {
 
 .round-image {
   border-radius: 50%;
+}
+
+.color_scheme {
+  top: 10%;
+  left: 80%;
+  position: fixed;
+  z-index: 300;
+  background-color: gray;
+  border-radius: 4px;
 }

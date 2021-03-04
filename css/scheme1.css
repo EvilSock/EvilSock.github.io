@@ -1,0 +1,25 @@
+.grad1 {
+  background: linear-gradient(
+    125deg,
+    #eefbfb 0%,
+    #eefbfb 40%,
+    #b2fcff calc(40% + 1px),
+    #b2fcff 60%,
+    #5edfff calc(60% + 1px),
+    #5edfff 72%,
+    #3e64ff calc(72% + 1px),
+    #3e64ff 100%
+  );
+}
+
+.btn-custom {
+  background-color: #12232e;
+}
+
+.color {
+  background-color: rgba(235, 235, 235, 0);
+}
+
+.card-custom {
+  background-color: #dafdfd;
+}

@@ -15,6 +15,7 @@ rgba(170, 192, 216, 0)
 
 */
 
+
 var myCarousel = document.querySelector('#carouselExampleControls')
 
 var carousel = new bootstrap.Carousel(myCarousel, {
@@ -24,31 +25,52 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   })
 
 $(document).on("mousewheel",()=>{
+var color = "#007cc7"
+var color_faded = "rgba(0, 124, 199, 0)"
+
+
+
+
   if ($(document).scrollTop() <= 20 && $(window).width() >= 995){
-		console.log("bruh")
 		$(".color").css({
 			// "background-color":"rgba(235, 235, 235,0)" //navbar color
-			"background-color":"rgba(0, 124, 199, 0)"
+			"background-color":color_faded
 	});
 	} else {
 		$(".color").css({
-			"background-color":"#007cc7"
+			"background-color":color
 	});
 	}
 });
 
 $(document).on("scroll",()=>{
+	var color = "#007cc7"
+	var color_faded = "rgba(0, 124, 199, 0)"
+
+
+
+
   if ($(document).scrollTop() <= 20 && $(window).width() >= 995){
-		console.log("bruh")
 		$(".color").css({
 			// "background-color":"rgba(235, 235, 235,0)" // navbar color
-			"background-color":"rgba(0, 124, 199, 0)"
+			"background-color":color_faded
 		});
 	} else {
 		$(".color").css({
 			// "background-color":"#ebebeb"
-			"background-color":"#007cc7" //navbar color
+			"background-color":color //navbar color
+			
 	});
 	}
 });
 
+
+function changeColorScheme() {
+	switch (document.getElementById("schemes").value){
+		case "1" : 
+			window.location.href= "1.html";
+			console.log(document.getElementById("schemes").value);
+		case "2" : 
+			window.location.href = "2.html";
+	}
+}
