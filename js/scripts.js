@@ -66,11 +66,15 @@ $(document).on("scroll",()=>{
 
 
 function changeColorScheme() {
-	switch (document.getElementById("schemes").value){
-		case "1" : 
-			window.location.href= "../index.html";
-			console.log(document.getElementById("schemes").value);
-		case "2" : 
-			window.location.href = "n2.html";
+	var str = document.getElementById("schemes").value;
+	switch (str){
+		case '1': 
+			window.location.href = "index.html"
+			break;
+		case '2': 
+			window.location.href = "n2.html"
+			break;
+		default:
+			alert("ok what");
 	}
 }
