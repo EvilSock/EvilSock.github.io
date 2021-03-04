@@ -68,9 +68,9 @@ $(document).on("scroll",()=>{
 function changeColorScheme() {
 	switch (document.getElementById("schemes").value){
 		case "1" : 
-			window.location.href= "1.html";
+			window.location.href= "../index.html";
 			console.log(document.getElementById("schemes").value);
 		case "2" : 
-			window.location.href = "2.html";
+			window.location.href = "n2.html";
 	}
 }
